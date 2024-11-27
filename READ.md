@@ -64,8 +64,8 @@ Je travaille sur la création d'un site pour un restaurant à Royan. c'est un ca
 
 ## 📫 Comment me contacter
 
-- **Email** : [votre-email@example.com](mailto:nphillipy@normandiewebschool.fr)
-- **LinkedIn** : [Votre Profil LinkedIn](https://www.linkedin.com/in/votre-nom)
+- **Email** : nphillipy@normandiewebschool.fr(mailto:nphillipy@normandiewebschool.fr)
+- **LinkedIn** : Nathan PHILLIPY ([https://www.linkedin.com/in/votre-nom](https://www.linkedin.com/in/nathan-phillipy-2846b3277/))
 
 
 ---
