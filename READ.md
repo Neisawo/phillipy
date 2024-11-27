@@ -1,6 +1,6 @@
-# 🌟 Présentation de [Votre Nom]
+# 🌟 Présentation de PHILLIPY NATHAN .
 
-![Image de profil](https://www.votre-lien-image.com/mon-image.jpg)  
+![Image de profil](file:///C:/Users/ASUS/Downloads/IMG_8549.jpg)  
 
 Bienvenue sur mon profil GitHub ! 👋  
 Je suis phillipy nathan, aapprenti développeur et toujours à la recherche de nouvelles technologies à explorer. 💻🚀
@@ -28,7 +28,7 @@ Je suis etudiant à la normandieweb school avec une passion pour **la résolutio
 
 ### Marque de vetemetn pour le crossfit l'entrepot au havre
 
-![Screenshot Projet 1](https://www.votre-lien-image.com/projet1.jpg)  
+'![Screenshot Projet 1](https://www.votre-lien-image.com/projet1.jpg)'  
 Un projet qui fait X et Y. Ce projet est mon tout premier en solo.
 
 - **Compétences apprisent** :
@@ -38,7 +38,7 @@ Un projet qui fait X et Y. Ce projet est mon tout premier en solo.
 
 ### Visuel pour le rappeur >Yeo__oo
 
-![Screenshot Projet 2](https://www.votre-lien-image.com/projet2.jpg)  
+'![Screenshot Projet 2](https://www.votre-lien-image.com/projet2.jpg)'  
 Un projet qui permet de découvrir un nouveau type de vidéo. PLus tourné vers l'image du rappeur, j'ai pu développer des compréhensionet des technique innovatrice
 
 - **découvertes** :
