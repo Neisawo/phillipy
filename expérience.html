@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Expériences Professionnelles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .carousel {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .carousel-items {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            opacity: 0; 
+            visibility: hidden; 
+            transition: opacity 0.5s ease, visibility 0.5s ease; 
+        }
+
+        input[type="radio"] {
+            display: none; 
+        }
+
+        #slide1:checked ~ .carousel-items .carousel-item:nth-child(1),
+        #slide2:checked ~ .carousel-items .carousel-item:nth-child(2),
+        #slide3:checked ~ .carousel-items .carousel-item:nth-child(3) {
+            opacity: 1; 
+            visibility: visible; 
+        }
+
+        #slide1:checked ~ .carousel-items {
+            transform: translateX(0);
+        }
+
+        #slide2:checked ~ .carousel-items {
+            transform: translateX(-100%);
+        }
+
+        #slide3:checked ~ .carousel-items {
+            transform: translateX(-200%);
+        }
+
+        .carousel-navigation {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .carousel-button {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #007BFF;
+            color: #007BFF;
+            margin: 0 5px;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-button:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .randomButton {
+            position: relative; 
+            transition: transform 0.2s;
+            z-index: 1; 
+        }
+
+        .randomButton:hover {
+            transform: translate(
+                calc(-20px + (40 * var(--random-x))) ,
+                calc(-20px + (40 * var(--random-y)))
+            );
+        }
+
+        :root {
+            --random-x: 20;
+            --random-y: 20;
+        }
+
+        .randomButton:hover {
+            --random-x: 30; /
+            --random-y: 30;
+        }
+
+        .randomButton:hover:nth-child(2) {
+            --random-x: -0.5; 
+            --random-y: -0.5; 
+        }
+
+        .randomButton:hover:nth-child(3) {
+            --random-x: 0; 
+            --random-y: 0.5; 
+        }
+
+        .randomButton:hover:nth-child(4) {
+            --random-x: 0.5; 
+            --random-y: 0; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="titre">
+    <h1>Mes Expériences Professionnelles</h1>
+</div>
+
+<div class="carousel">
+    <input type="radio" name="carousel" id="slide1" checked>
+    <input type="radio" name="carousel" id="slide2">
+    <input type="radio" name="carousel" id="slide3">
+
+    <div class="carousel-items">
+        <div class="carousel-item">
+            <h2>Apprenti Ingénieur Bureau d’étude chez Blard Lyon</h2>
+            <h5>Durée: Août 2023 - Juillet 2024</h5>
+            <h3>Responsabilités:</h3>
+            <ul>
+                <li>Développement et gestion d’un projet</li>
+                <li>Présentation de groupe et projet</li>
+            </ul>
+        </div>
+        <div class="carousel-item">
+            <h2>Stage Safran Nacelle Le Havre</h2>
+            <h5>Durée: Mai 2023 - Juin 2023</h5>
+            <h3>Responsabilités:</h3>
+            <ul>
+                <li>Travail dans un grand groupe</li>
+                <li>Recherche de solution</li>
+            </ul>
+        </div>
+        <div class="carousel-item">
+            <h2>Serveur/Barman à l’Etable Le Havre</h2>
+            <h5>Durée: Saison estivale 2022 + Extra</h5>
+            <h3>Responsabilités:</h3>
+            <ul>
+                <li>Organisation</li>
+                <li>Contact clientèle européenne</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="carousel-navigation">
+        <label for="slide1" class="carousel-button">1</label>
+        <label for="slide2" class="carousel-button">2</label>
+        <label for="slide3" class="carousel-button">3</label>
+        </div>
+
+        <div>
+            <a href="CVSITE.html">
+                <button class="randomButton" style="padding: 10px 20px; font-size: 30px;">Retour au CV</button>    
+            </a>
+        </div>
+       
