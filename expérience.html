@@ -31,20 +31,20 @@
             min-width: 100%;
             box-sizing: border-box;
             padding: 20px;
-            opacity: 0; 
-            visibility: hidden; 
-            transition: opacity 0.5s ease, visibility 0.5s ease; 
+            opacity: 0; /* Masquer par défaut */
+            visibility: hidden; /* Masquer par défaut */
+            transition: opacity 0.5s ease, visibility 0.5s ease; /* Transition pour l'opacité et la visibilité */
         }
 
         input[type="radio"] {
-            display: none; 
+            display: none; /* Masquer les boutons radio */
         }
 
         #slide1:checked ~ .carousel-items .carousel-item:nth-child(1),
         #slide2:checked ~ .carousel-items .carousel-item:nth-child(2),
         #slide3:checked ~ .carousel-items .carousel-item:nth-child(3) {
-            opacity: 1; 
-            visibility: visible; 
+            opacity: 1; /* Afficher uniquement l'élément actif */
+            visibility: visible; /* Rendre visible l'élément actif */
         }
 
         #slide1:checked ~ .carousel-items {
@@ -81,9 +81,9 @@
         }
 
         .randomButton {
-            position: relative; 
-            transition: transform 0.2s;
-            z-index: 1; 
+            position: relative; /* Nécessaire pour le déplacement */
+            transition: transform 0.2s; /* Animation douce lors du déplacement */
+            z-index: 1; /* Assurez-vous que le bouton est au-dessus des autres éléments */
         }
 
         .randomButton:hover {
@@ -93,14 +93,15 @@
             );
         }
 
+        /* Définir des variables CSS pour les déplacements aléatoires */
         :root {
-            --random-x: 20;
-            --random-y: 20;
+            --random-x: 0;
+            --random-y: 0;
         }
 
         .randomButton:hover {
-            --random-x: 30; /
-            --random-y: 30;
+            --random-x: 0.5; /* Ajustez les valeurs pour un mouvement plus subtil */
+            --random-y: 0.5;
         }
 
         .randomButton:hover:nth-child(2) {
@@ -130,7 +131,7 @@
     <input type="radio" name="carousel" id="slide2">
     <input type="radio" name="carousel" id="slide3">
 
-    <div class="carousel-items">
+      <div class="carousel-items">
         <div class="carousel-item">
             <h2>Apprenti Ingénieur Bureau d’étude chez Blard Lyon</h2>
             <h5>Durée: Août 2023 - Juillet 2024</h5>
@@ -167,8 +168,8 @@
         </div>
 
         <div>
-            <a href="CVSITE.html">
-                <button class="randomButton" style="padding: 10px 20px; font-size: 30px;">Retour au CV</button>    
+            <a href="index.html">
+                <button class="randomButton" style="padding: 10px 20px; font-size: 16px;">Voir mon CV</button>    
             </a>
         </div>
        

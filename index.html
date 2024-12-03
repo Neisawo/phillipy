@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemple de Page Web</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .center-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .header h1 {
+            text-align: center;
+            color: #333;
+        }
+        .introduction, .experience, .Ajourd'hui {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        h3 {
+            color: #555;
+        }
+        nav {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>Bienvenue sur notre page d'exemple</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Section de Contenu</h2>
-            <p>Ceci est un paragraphe d'exemple avec <strong>du texte en gras</strong> et <em>en italique</em>.</p>
-            <ul>
-                <li>Élément de liste 1</li>
-                <li>Élément de liste 2</li>
-                <li>Élément de liste 3</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <img src="assets/images/Logo-NWS-blanc.svg" alt="Exemple d'image">
-        <p>
-            &copy; 2024 Exemple de Page Web. Tous droits réservés.
-        </p>
-    </footer>
-    <script src="assets/js/script.js"></script>
-</body>
+    <div class="center-container"> 
+        <div class="header">
+            <h1>Bienvenue sur mon CV !</h1>
+        </div>
+        
+        <div class="introduction">
+            <h2>Depuis petit, ma mère m’a dit : « Ne lâche jamais, ce n’est pas la façon de faire des Phillipy »</h2>
+            <p>Vrai mindset, c’est grâce à cela, je suis ici. Je suis Phillipy Nathan, futur chef de projet digital dans la communication digitale, mais aussi “vidéaste autodidacte”. Ce sont deux travaux qui vont ensemble. Que faire sans de bonnes images pour se faire connaître sur les réseaux ?</p>
+        </div>
 
+        <div class="experience">
+            <h3>Né avec le numérique, j’ai tout de suite été attiré.</h3>
+            <p>Evoluant en même temps, j’ai décidé, dans un premier temps, de m’orienter vers de l’ingénierie. Pour satisfaire mon côté créatif et connecté, je suis parti en conception 3D de produit. Hyper stimulé, je me suis trouvé une passion. J’ai pu obtenir un DUT et tenter l’INSA de Lyon.</p>
+            <p>Après être passé par l’ingénierie, je souhaitais continuer mes études. C’est LE moment. Je me suis orienté dans la communication dans la Normandie Webschool.</p>
+            <p>Pratiquant la qualité de mon parcours, j’ai fait la moitié de mon parcours en alternance. En école d’ingénieur, j’ai pu travailler tout en apprenant. Je me devais de continuer dans cette voie pour la communication, c’est la meilleure façon de se développer rapidement et d’acquérir le plus de bagage possible !</p>
+        </div>
+
+        <div class="Ajourd'hui">
+            <h3>Aujourd’hui, je suis chez LHDESIGN et Conception.</h3>
+            <p>Je travaille aux côtés de Leroux Rudy. Pour entreprise ou bien particulier, nous faisons toute sorte de personnalisation. Allant des goodies aux devantures de magasin en passant par le textile, notre travail est sans limite !</p>
+            <p>À côté du travail, j’essaye de développer des projets personnels dans lesquels j’aide des amis ou bien des activités qui me passionnent. Mon but est de créer le plus possible pour créer mon réseau et mon image.</p>
+            <p>Soyons ensemble sur un projet. Nous pouvons créer de nouvelles visions et créer de belles choses.</p>
+        </div>
+
+        <nav class="navigation">
+            <span><a href="formation.html">Formation</a></span>
+            <span><a href="expérience.html">Expérience</a></span>
+            <span><a href="contact.html">Contact</a></span>
+            <span><a href="centre_interet.html">Centre d'intérêt</a></span>
+        </nav>
+    </div>
+</body>
 </html>
