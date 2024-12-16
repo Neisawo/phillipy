@@ -3,5 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Expériences Professionnelles</title>
+    <title>Fiche Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+background-image: url(https://i.pinimg.com/originals/82/5d/2f/825d2f1c303623c97f2eeed321a76d45.gif); 
+background-size: cover; 
+background-repeat: no-repeat; 
+background-position: center; 
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+perspective: 1000px;
+        }
+
+        .contact-card {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card:hover {
+            transform: rotateY(10deg); /* Effet de rotation au survol */
+        }
+
+        .contact-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+.social-button {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #0077b5; /* Couleur LinkedIn */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-button.instagram {
+    background-color: #e4405f; /* Couleur Instagram */
+}
+
+.social-button:hover {
+    background-color: #005582; /* Couleur LinkedIn au survol */
+    transform: translateZ(10px); /* Effet de perspective */
+}
+
+.social-button.instagram:hover {
+    background-color: #c13584; /* Couleur Instagram au survol */
+    transform: translateZ(10px); /* Effet de perspective */
+}
+
+.new-button {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #ff5722; /* Couleur du nouveau bouton */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.new-button:hover {
+    background-color: #e64a19; /* Couleur au survol */
+    transform: translateZ(10px); /* Effet de perspective */
+}
+    </style>
 </head>
+<body>
+    <div class="contact-card">
+        <div class="contact-info">
+            <h2>Contactez-moi</h2>
+            <p>Téléphone : 0616745548</p>
+            <p>Email : phillipynathan76@gmail.com</p>
+            <p>Adresse : 2& avenue george clemenceau, 76290 Montivilliers</p>
+        </div>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/nathan-phillipy-2846b3277/" class="social-button" target="_blank">🔗</a>
+            <a href="https://www.instagram.com/naaathan.1011/" class="social-button instagram" target="_blank">📷</a>
+            <a href="index.html" class="new-button" target="_self">🏠</a>
+        </div>
+    </div>
+
+</body>
+</html>

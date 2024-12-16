@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://i.pinimg.com/originals/b9/1e/11/b91e1131ca20f6369aa68d21cb3a8960.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+    margin: 0;
+}
+h1 {
+    color: white; /* Change la couleur du texte en blanc */
+    margin-top: 20px; /* Ajustez la valeur pour le positionner plus haut */
+    text-align: center; /* Centrer le titre si nécessaire */
+}
+
+.container {
+    text-align: center; /* Centrer le contenu */
+    padding: 100px; /* Espacement autour du contenu */
+}
+
+.bubble-container {
+    display: flex; /* Utiliser flexbox pour aligner les bulles */
+    justify-content: center; /* Centrer les bulles horizontalement */
+    flex-wrap: wrap; /* Permettre aux bulles de passer à la ligne */
+}
+
+.bubble {
+    margin: 15px; /* Espacement entre les bulles */
+    width: 100px; /* Largeur de la bulle */
+    height: 100px; /* Hauteur de la bulle */
+    border-radius: 50%; /* Rendre la bulle ronde */
+    overflow: hidden; /* Masquer le débordement */
+    animation: float 3s ease-in-out infinite; /* Animation de flottement */
+}
+
+.bubble img {
+    width: 100%; /* L'image remplit la bulle */
+    height: auto; /* Conserver le ratio de l'image */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Position de départ */
+    }
+    50% {
+        transform: translateY(-10px); /* Flottement vers le haut */
+    }
+    100% {
+        transform: translateY(0); /* Retour à la position de départ */
+    }
+}
+
+.button {
+    display: inline-block; /* Afficher le bouton en ligne */
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+    padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+    background-color: #007BFF; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    border-radius: 5px; /* Coins arrondis */
+}

@@ -4,77 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="styles.css"> 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: url(https://i.pinimg.com/originals/c8/2a/40/c82a4070a0fdfcb18bc8694e1b8b699d.gif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            perspective: 1000px;
             margin: 0;
-            padding: 20px;
         }
-        .center-container {
-            max-width: 800px;
-            margin: auto;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /* Réduit l'espace entre les cartes */
         }
-        .header h1 {
+
+        .welcome-card {
+            width: 250px; /* Réduit la largeur des cartes */
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .welcome-card.show {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .welcome-card:hover {
+            transform: scale(1.05);
+        }
+
+        .header {
             text-align: center;
+            margin: 10px 0; /* Réduit la marge */
+        }
+
+        .header h1 {
+            font-size: 20px; /* Réduit la taille de la police */
             color: #333;
         }
-        .introduction, .experience, .Ajourd'hui {
-            margin: 20px 0;
+
+        .header p {
+            font-size: 12px; /* Réduit la taille de la police */
+            color: #666;
         }
-        h2 {
-            color: #007BFF;
+
+        .content {
+            padding: 15px; /* Réduit le padding */
+            text-align: center;
         }
-        h3 {
-            color: #555;
+
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px; /* Réduit la marge */
         }
+
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px; /* Réduit le padding */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
         nav {
-            font-size: 20px;
+            font-size: 16px;
             margin-top: 20px;
             text-align: center;
         }
+
         nav a {
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
             color: #007BFF;
+            transition: color 0.3s;
         }
+
         nav a:hover {
             color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="center-container"> 
-        <div class="header">
-            <h1>Bienvenue sur mon CV !</h1>
+    <div class="container">
+        <div class="welcome-card">
+            <div class="header">
+                <h1>Bienvenue sur mon CV !</h1>
+                <p>Depuis petit, ma mère m’a dit : « Ne lâche jamais, ce n’est pas la façon de faire des Phillipy »</p>
+            </div>
+            <div class="content">
+                <img src="assets/images/IMG_8795.png" alt="Mon Image de Profil">
+                <p>Je suis Phillipy Nathan, futur chef de projet digital dans la communication digitale.</p>
+            </div>
         </div>
-        
-        <div class="introduction">
-            <h2>Depuis petit, ma mère m’a dit : « Ne lâche jamais, ce n’est pas la façon de faire des Phillipy »</h2>
-            <p>Vrai mindset, c’est grâce à cela, je suis ici. Je suis Phillipy Nathan, futur chef de projet digital dans la communication digitale, mais aussi “vidéaste autodidacte”. Ce sont deux travaux qui vont ensemble. Que faire sans de bonnes images pour se faire connaître sur les réseaux ?</p>
+        <div class="welcome-card">
+            <div class="header">
+                <h1>Mon Parcours</h1>
+            </div>
+            <div class="content">
+                <p>Je suis aussi “vidéaste autodidacte” mais j'ai fait d'autre ecole avant d'arriver a la normandie web school.</p>
+                <a href="formation.html" class="button">Voir mon Parcours</a>
+            </div>
         </div>
-
-        <div class="experience">
-            <h3>Né avec le numérique, j’ai tout de suite été attiré.</h3>
-            <p>Evoluant en même temps, j’ai décidé, dans un premier temps, de m’orienter vers de l’ingénierie. Pour satisfaire mon côté créatif et connecté, je suis parti en conception 3D de produit. Hyper stimulé, je me suis trouvé une passion. J’ai pu obtenir un DUT et tenter l’INSA de Lyon.</p>
-            <p>Après être passé par l’ingénierie, je souhaitais continuer mes études. C’est LE moment. Je me suis orienté dans la communication dans la Normandie Webschool.</p>
-            <p>Pratiquant la qualité de mon parcours, j’ai fait la moitié de mon parcours en alternance. En école d’ingénieur, j’ai pu travailler tout en apprenant. Je me devais de continuer dans cette voie pour la communication, c’est la meilleure façon de se développer rapidement et d’acquérir le plus de bagage possible !</p>
+        <div class="welcome-card">
+            <div class="header">
+                <h1>Mes Compétences</h1>
+            </div>
+            <div class="content">
+                <p>Création de contenu, gestion de projet, et communication digitale et bien d'autre !</p>
+                <a href="competences.html" class="button">Voir mes Compétences</a>
+            </div>
         </div>
-
-        <div class="Ajourd'hui">
-            <h3>Aujourd’hui, je suis chez LHDESIGN et Conception.</h3>
-            <p>Je travaille aux côtés de Leroux Rudy. Pour entreprise ou bien particulier, nous faisons toute sorte de personnalisation. Allant des goodies aux devantures de magasin en passant par le textile, notre travail est sans limite !</p>
-            <p>À côté du travail, j’essaye de développer des projets personnels dans lesquels j’aide des amis ou bien des activités qui me passionnent. Mon but est de créer le plus possible pour créer mon réseau et mon image.</p>
-            <p>Soyons ensemble sur un projet. Nous pouvons créer de nouvelles visions et créer de belles choses.</p>
+        <div class="welcome-card">
+            <div class="header">
+                <h1>Niveau de langue</h1>
+            </div>
+            <div class="content">
+                <p>Vous pourrez retrouver mes certificaation ainsi que niveau de langue juste ici</p>
+                <img src="assets/images/IMG_2437.PNG"voltaire style="width: 50px; height: auto;">
+            </div>
         </div>
-
-        <nav class="navigation">
-            <span><a href="formation.html">Formation</a></span>
-            <span><a href="expérience.html">Expérience</a></span>
-            <span><a href="contact.html">Contact</a></span>
-            <span><a href="centre_interet.html">Centre d'intérêt</a></span>
-        </nav>
+        <div class="welcome-card">
+            <div class="header">
+                <h1>Mes expériences</h1>
+            </div>
+            <div class="content">
+                <p>Quels parcours professionnel ai-je fait ?</p>
+                <a href="expérience.html" class="button">Voir mes expériences</a>
+            </div>
+        </div>
+        <div class="welcome-card">
+            <div class="header">
+                <h1>Contact</h1>
+            </div>
+            <div class="content">
+                <p>Vous pouvez me contacter via mes réseaux sociaux ou par email.</p>
+                <a href="contact.html" class="button">Me Contacter</a>
+            </div>
+        </div>
     </div>
+
+    <script>
+        // apparition
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll('.welcome-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('show');
+                }, index * 500); // Délai de 300ms 
+            });
+        });
+    </script>
 </body>
 </html>

@@ -3,78 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formation</title>
+    <title>Mon Parcours Scolaire</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f4f4f4, #eaeaea);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            transition: background 0.5s;
+        }
+        center {
+            margin: 20px 0;
+        }
+        h1 {
+            color: #007BFF;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: fadeIn 2s;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin: 10px 0;
+            animation: slideIn 1s;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.4em;
+            margin: 5px 0;
+        }
+        h5 {
+            color: #888;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        td {
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        td:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        nav {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <center>
-        <a href="CVSITE.html">
-            <button style="padding: 10px 20px; font-size: 16px;">Voir mon CV</button>
-        </a>
-    </center>
-    <center>
         <div class="titre">
-            <h1>
-                Mon parcours scolaire
-            </h1>
+            <h1>Mon parcours scolaire</h1>
         </div>
-        
     </center>
     <div class="soustitre 1">
         <table>
             <tr>
                 <td>
-                    <h2>Bachelor chef de projet digitaux</h2>
-                    <h5>2024_présent</h5>
-                    <h3>Une formation dans la communication digitale à la Normandiewebschool</h3>
+                    <h2>Communication Digitale</h2>
+                    <h5>2024 - Présent</h5>
+                    <h3>Normandiewebschool</h3>
                 </td>
                 <td>
-                    <img src="assets/images/téléchargement (5).png" alt="LOGO normandiewebschool" style="width: 150px; height: 150px;">
+                    <img src="assets/images/téléchargement (5).png" alt="LOGO normandiewebschool">
                 </td>
             </tr>
-        </table>
-    </div>
-    <div class="soustitre 2">
-        <table>
             <tr>
                 <td>
-                    <div>
-                        <h2>Génie mécanique conception et innovation de produit </h2>
-                    <h5>2023-2024</h5>
-                    <h3>Diplome d'ingénieur à l'INSA de Lyon</h3>
-                    </div>
+                    <h2>Génie Mécanique Conception</h2>
+                    <h5>2023 - 2024</h5>
+                    <h3>Diplôme d'ingénieur à l'INSA de Lyon</h3>
                 </td>
                 <td>
-                    <img src="assets/images/insa lyon.png" alt="LOGO insalyon" style="width: 150px; height: 150px;">
+                    <img src="assets/images/insa lyon.png" alt="LOGO insalyon">
                 </td>
             </tr>
-        </table>
-    </div>
-    <div class="soustitre 2">
-        <table>
             <tr>
                 <td>
-                    <div>
-                        <h2>Génie mécanique et Productique </h2>
-                    <h5>2021-2023</h5>
-                    <h3>DUT à l'iut du HAvre </h3>
-                    </div>
-                </td>
-                <td>
-                    <img src= alt="LOGO insalyon" style="width: 150px; height: 150px;">
-                </td>
-            </tr>
-        </table>
-    </div>
-    <nav>
-        <nav style="font-size: 20px;">
-            <span style="margin-right: 30px;"><a href="expérience.html">Expérience</a></span>
-            <span style="margin-right: 30px;"><a href="contact.html">Compétences</a></span>
+                    <h2>Génie Mécanique et Productique</h2>
+                        <h5>2021 - 2023</h5>
+                        <h3>Université du Havre</h3>
+                    </td>
+                    <td>
+                        <img src="assets/images/téléchargement (2).jpg" alt="univ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Baccalauréat Sspécialité Math, Physique, Math expert </h2>
+                        <h5>2018 - 2021</h5>
+                        <h3>Lycée Jean Prévost</h3>
+                    </td>
+                
+                </tr>
+            </table>
+        </div>
+        <nav>
+            <button onclick="location.href='index.html'">Accueil</button>
+            <button onclick="location.href='contact.html'">Contact</button>
+            <button onclick="location.href='experience.html'">Expériences</button>
         </nav>
-    </nav>
-</body>
-<center>
-    <a href="index.html">
-        <button style="padding: 10px 20px; font-size: 16px;">Retour vers l'acceuil</button>
-    </a>
-</center>
-</html>
+    </body>
+    </html>
